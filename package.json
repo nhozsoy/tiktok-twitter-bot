@@ -1,0 +1,18 @@
+{
+  "name": "tiktok-twitter-bot",
+  "version": "1.0.0",
+  "description": "A task that shares liked tiktok videos on twitter",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nihat Özsoy",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "node-fetch": "^2.6.12",
+    "pg": "^8.11.1",
+    "twitter-api-v2": "^1.15.0"
+  }
+}
