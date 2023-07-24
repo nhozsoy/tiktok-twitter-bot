@@ -10,13 +10,9 @@ await database.init();
 database.startSession();
 const tiktok = new Tiktok();
 const twitter = new Twitter();
-try {
-  await addNewVideos();
-  await postNextVideo();
-  await database.markJobAsSuccessful();
-} catch (error) {
-  await database.logError(error.message);
-}
+addNewVideos();
+postNextVideo();
+await database.markJobAsSuccessful();
 
 process.exit();
 
